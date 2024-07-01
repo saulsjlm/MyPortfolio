@@ -1,0 +1,165 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+main {
+    padding: 20px;
+}
+section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #8E24AA; /* Color de acento morado */
+}
+section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    color: #8E24AA; /* Color de acento morado */
+}
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.gallery img {
+    width: calc(25% - 20px);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form input, form textarea, form button {
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form input:focus, form textarea:focus {
+    border-color: #8E24AA; /* Color de acento morado */
+    box-shadow: 0 0 5px rgba(142, 36, 170, 0.5); /* Sombra de color acento */
+    outline: none;
+}
+form textarea {
+    resize: vertical;
+    height: 150px;
+}
+form button {
+    background-color: #8E24AA; /* Color de acento morado */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+form button:hover {
+    background-color: #6A1B9A; /* Un tono más oscuro del color de acento */
+}
+.icon-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.icon-container i {
+    font-size: 24px;
+    color: #8E24AA; /* Color de acento morado */
+}
+.external-script {
+    background-color: #ddd;
+    margin: 20px 0;
+    padding: 20px;
+}
+.external-script p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.gif-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    height: 300px;
+    overflow-y: scroll;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.gif-gallery img {
+    width: calc(33% - 10px);
+    border-radius: 8px;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .gallery img {
+        width: calc(50% - 10px);
+    }
+    .gif-gallery img {
+        width: calc(50% - 10px);
+    }
+}
+@media (max-width: 480px) {
+    .gallery img {
+        width: 100%;
+    }
+    .gif-gallery img {
+        width: 100%;
+    }
+    section h2 {
+        font-size: 24px;
+    }
+    form input, form textarea, form button {
+        font-size: 14px;
+    }
+}
